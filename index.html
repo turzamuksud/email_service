@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Email Service</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/my_js.js"></script>
+</head>
+<body>
+<div class="header">
+	<div class="container">
+		<div class="col-md-3">
+			<img class="img-responsive" src="image/Logo.svg">
+			
+		</div>
+			<div class="title"><h1>Just <span>e-mail</span></h1></div>
+		<div class="col-md-9">
+			<nav>
+				<ul class="pull-right">
+					<li><a href="#" class="button button-cse" id="popup" onclick="div_show()">CSE</a></li>
+					<li><a href="#" class="button button-eee" id="popup" onclick="div_show()">EEE</a></li>
+					<li><a href="#" class="button button-bba" id="popup" onclick="div_show()">BBA</a></li>
+					<li><a href="#" class="button button-eng" id="popup" onclick="div_show()">ENG</a></li>
+					<li><a href="#" class="button button-msj" id="popup" onclick="div_show()">MSJ</a></li>
+					<li><a href="more.php" class="button button-msj" >More</a></li>
+					<div class="clearfix"></div>
+				</ul>
+			</nav>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--End of header menu-->
+<div class="slideshow">
+	<div class="slide">
+		<img class="img-responsive" src="image/slider.jpg">
+		<div class="text">
+			<h2><span>"I'm looking for the unexpected.</span></h2>
+			<h2><span>I'm looking for things I've never seen before."</span></h2>
+		</div>
+	</div>
+</div>
+<!--End of slideshow-->
+<div class="services">
+	<div class="container">
+		<h3>More Options</h3>
+		<div class="title-border"></div>
+		<div class="row service_box">
+			<nav class="dropdown col-md-6">
+				<ul>
+					<li><b>I am HERE..</b>
+            			<ul class="sub">
+            				<li><a href="create.php" class="button2">Create New Group</a></li>
+            				<li><a href="del_grp.php" class="button2">Delete Group</a></li>
+            				<li><a href="show_table.php" class="button2">Show Group</a></li>
+            				<li><a href="add.php" class="button2">Add New Email</a></li>
+							<li><a href="delete.php" class="button2">Delete Email</a></li>
+							<li><a href="show.php" class="button2">View Email</a></li>
+	    		        </ul>
+					</li>
+    			</ul>
+			</nav>			
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--End of service section-->
+<div class="portfolio">
+	<div class="container">
+		<div class="col-md-6">
+			<h3>More features</h3>
+			<div class="title-border-inverse"></div>
+		</div>
+		<div class="col-md-6">
+			
+		</div>
+		<div class="clearfix"></div>
+		<div class="portfolio_box">
+			<div class="col-md-3">
+				<div class="portfolio_thum">
+					<img class="img-responsive" src="image/portfolio_thum_1.jpg">
+					<div class="img_hover">
+						+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="portfolio_thum">
+					<img class="img-responsive" src="image/portfolio_thum_1.jpg">
+					<div class="img_hover">
+						+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="portfolio_thum">
+					<img class="img-responsive" src="image/portfolio_thum_1.jpg">
+					<div class="img_hover">
+						+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="portfolio_thum">
+					<img class="img-responsive" src="image/portfolio_thum_1.jpg">
+					<div class="img_hover">
+						+
+					</div>
+				</div>
+			</div>
+			<h3>Coming Soon..</h3>
+			<div class="title-border-inverse"></div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<a href="https://en.wikipedia.org/wiki/Privacy">Privacy</a>
+	<a href="https://termsfeed.com/blog/sample-terms-and-conditions-template/">Terms</a>
+	<a href="https://support.google.com/accounts/answer/3118621?hl=en">Settings</a>
+	<a href="https://support.google.com/chrome/?hl=en#topic=3227046">Help</a>
+	<div class="clearfix"></div>
+</div>
+<!--End of portfolio section-->
+
+
+<div id="abc">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Email Form -->
+<form action="mail_db.php" id="form" method="post" name="form">
+<img id="close"  onclick ="div_hide()" alt="X">
+<h2>Send Email</h2>
+
+<input id="email" name="name" placeholder="Email Subject" type="text">
+<textarea id="msg" name="message" placeholder="Message"></textarea>
+<input id="submit" type="submit" value="Send">
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
